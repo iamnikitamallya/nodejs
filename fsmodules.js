@@ -1,5 +1,7 @@
-const fs = require("fs");
-const sum = require('./commonjsmodule')
+// const fs = require("fs");
+// const sum = require('./commonjsmodule') //importing syntax in commonjs
+import fs from "fs"
+import {userAddress} from "./es6module.mjs"
 
 // fs.readFile('file.txt', 'utf8', (err, data) => {
 //     // console.log(err, data)
@@ -10,9 +12,9 @@ const sum = require('./commonjsmodule')
 
 // console.log(sum())
 
-const b = fs.writeFile('file2.text', sum(), () => {
-    console.log(sum())
-})
+const b = fs.writeFile("file2.text", userAddress(), () => {
+  console.log(userAddress());
+});
 
 
 // console.log("This is a nodejs beginner project")
