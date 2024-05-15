@@ -1,3 +1,5 @@
 const user = require("./sample")
 
-console.log("Hellow World", user)
+const os = require('os')
+
+console.log("hello world", user)
